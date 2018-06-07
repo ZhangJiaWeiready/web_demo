@@ -1,0 +1,194 @@
+.starts {
+  padding: 80px 0;
+}
+.starts .starts_wrap .starts_h3 {
+  font-size: 40px;
+  color: #FFB262;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: .8em;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.starts .starts_wrap .starts_h3:before {
+  position: absolute;
+  left: 44.5%;
+  bottom: 8%;
+  width: 11%;
+  background-color: #FFB262;
+  content: '';
+  height: 2px;
+}
+.starts .starts_wrap .starts_h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 41%;
+  width: 18%;
+  background-color: #FFB262;
+  content: '';
+  height: 2px;
+}
+.starts .starts_wrap .starts_h3 span {
+  color: white;
+}
+.starts .starts_wrap .starts_p {
+  color: white;
+  font-size: 14px;
+  width: 70%;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+.starts .starts_wrap .starts_an {
+  margin-top: 5em;
+}
+.starts .starts_wrap .starts_an .starts_an_grid {
+  text-align: center;
+}
+.starts .starts_wrap .starts_an .starts_an_grid span {
+  font-size: 2.5em;
+  color: white;
+}
+.starts .starts_wrap .starts_an .starts_an_grid h3 {
+  font-size: 1.5em;
+  color: #ffb262;
+  letter-spacing: 3px;
+  margin: 30px 0 20px;
+  font-weight: 600;
+}
+.starts .starts_wrap .starts_an .starts_an_grid p {
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: 0.1em 0 0.1em;
+}
+.team {
+  padding: 80px 0;
+  background-color: white;
+}
+.team .team_wrap .team_h3 {
+  font-size: 40px;
+  color: #FFB262;
+  text-align: center;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: .8em;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.team .team_wrap .team_h3:before {
+  position: absolute;
+  left: 44.5%;
+  bottom: 8%;
+  width: 11%;
+  background-color: #FFB262;
+  content: '';
+  height: 2px;
+}
+.team .team_wrap .team_h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 41%;
+  width: 18%;
+  background-color: #FFB262;
+  content: '';
+  height: 2px;
+}
+.team .team_wrap .team_h3 span {
+  color: #000;
+}
+.team .team_wrap .team_p {
+  color: #777;
+  font-size: 14px;
+  width: 70%;
+  line-height: 28px;
+  text-align: center;
+  margin: 0 auto;
+}
+.team .team_wrap .team_ph {
+  margin: 3em 0 0;
+}
+.team .team_wrap .team_ph .team_grid {
+  text-align: center;
+  width: 30%;
+  margin-right: 5%;
+  padding: 2em 1em;
+  border: 1px solid #999;
+}
+.team .team_wrap .team_ph .team_grid h4 {
+  font-size: 1.5em;
+  color: #ffb262;
+  margin: .5em 0;
+}
+.team .team_wrap .team_ph .team_grid p {
+  color: #777;
+  line-height: 2em;
+  letter-spacing: 2px;
+}
+.team .team_wrap .team_ph .team_grid .team_icon {
+  margin: 1em 0 0;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button {
+  display: inline-block;
+  border: 1px solid black;
+  width: 32px;
+  height: 32px;
+  margin: 0 3px;
+  line-height: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button:before {
+  display: inline-block;
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 102%;
+  left: -118%;
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button .fa {
+  font-size: 18px;
+  vertical-align: middle;
+  transform: scale(0.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button:hover:before {
+  top: -8%;
+  left: -8%;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button:hover .fa {
+  color: white !important;
+  transform: scale(1);
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.facebook .fa {
+  color: #3B5998;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.facebook:before {
+  background-color: #3B5998;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.twitter .fa {
+  color: #3CF;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.twitter:before {
+  background-color: #3CF;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.google-plus .fa {
+  color: #DC4A38;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.google-plus:before {
+  background-color: #DC4A38;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.dribbble .fa {
+  color: #F26798;
+}
+.team .team_wrap .team_ph .team_grid .team_icon .team_icon_button.dribbble:before {
+  background-color: #F26798;
+}
+.team .team_wrap .team_ph .team_grid:nth-child(3) {
+  margin-right: 0;
+}

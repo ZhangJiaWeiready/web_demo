@@ -1,0 +1,210 @@
+.starts{
+  padding:100px 0;
+  .starts_wrap{
+    .starts_h3{
+      font-size: 40px;
+      color: #FFB262;
+      text-align: center;
+      position: relative;
+      margin-bottom: 30px;
+      padding-bottom: .8em;
+      letter-spacing: 4px;
+      //首字母大写
+      text-transform:capitalize;
+      &:before{
+        position: absolute;
+        left: 44.5%;
+        bottom: 8%;
+        width: 11%;
+        background-color: #FFB262;
+        content: '';
+        height: 2px;
+      }
+      &:after{
+        position: absolute;
+        bottom: 0;
+        left: 41%;
+        width: 18%;
+        background-color: #FFB262;
+        content: '';
+        height: 2px;
+      }
+      span{
+        color: white;
+      }
+    }
+    .starts_p{
+      color: white;
+      font-size: 14px;
+      width: 70%;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .starts_an{
+      margin-top: 5em;
+      .starts_an_grid{
+        text-align: center;
+        span{
+          font-size: 2.5em;
+          color: white;
+        }
+        h3{
+          font-size: 1.5em;
+          color: #ffb262;
+          letter-spacing: 3px;
+          margin: 30px 0 20px;
+          font-weight: 600;
+        }
+        p{
+          font-size: 3em;
+          font-weight: 100;
+          letter-spacing: 2px;
+          color: #ffffff;
+          margin: 0.1em 0 0.1em;
+        }
+      }
+    }
+  }
+}
+
+.team{
+  padding: 80px 0;
+  background-color: white;
+  .team_wrap{
+    .team_h3{
+      font-size: 40px;
+      color: #FFB262;
+      text-align: center;
+      position: relative;
+      margin-bottom: 30px;
+      padding-bottom: .8em;
+      letter-spacing: 4px;
+      //首字母大写
+      text-transform:capitalize;
+      &:before{
+        position: absolute;
+        left: 44.5%;
+        bottom: 8%;
+        width: 11%;
+        background-color: #FFB262;
+        content: '';
+        height: 2px;
+      }
+      &:after{
+        position: absolute;
+        bottom: 0;
+        left: 41%;
+        width: 18%;
+        background-color: #FFB262;
+        content: '';
+        height: 2px;
+      }
+      span{
+        color: #000;
+      }
+    }
+    .team_p{
+      color: #777;
+      font-size: 14px;
+      width: 70%;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .team_ph{
+      margin: 3em 0 0;
+      .team_grid{
+        text-align: center;
+        //虽然使用了栅格系统（33.3%），但是还想在响应式的基础上，在缩小宽度
+        width: 30%;
+        margin-right: 5%;
+        padding: 2em 1em;
+        border: 1px solid #999;
+        h4{
+          font-size: 1.5em;
+          color: #ffb262;
+          margin: .5em 0;
+        }
+        p{
+          color: #777;
+          line-height: 2em;
+          letter-spacing: 2px;
+        }
+        .team_icon{
+          margin: 1em 0 0;
+          .team_icon_button{
+            display: inline-block;
+            border: 1px solid black;
+            width: 32px;
+            height: 32px;
+            margin: 0 3px;
+            line-height: 28px;
+            //这2条，都是为了要动画的伪元素设置的。
+            //伪元素的位置会偏离，并且是绝对定位。
+            position: relative;
+            //隐藏伪元素一开始的位置
+            overflow: hidden;
+            transition: 0.5s ease-in;
+            &:before{
+              display: inline-block;
+              content: '';
+              width: 120%;
+              height: 120%;
+              position: absolute;
+              top: 102%;
+              left: -118%;
+              transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59)
+            }
+            .fa{
+              font-size: 18px;
+              vertical-align: middle;
+              //动画之前都是缩小的。
+              transform: scale(0.8);
+              transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+
+            }
+            &:hover{
+              &:before{
+                top: -8%;
+                left: -8%;
+              }
+              .fa{
+                color: white !important;
+                transform: scale(1);
+              }
+            }
+            &.facebook .fa{
+              color: #3B5998;
+            }
+            &.facebook:before{
+              background-color: #3B5998;
+              //opacity: 0.1;
+            }
+            &.twitter .fa{
+              color: #3CF;
+            }
+            &.twitter:before{
+              background-color: #3CF;
+            }
+            &.google-plus .fa{
+              color: #DC4A38;
+            }
+            &.google-plus:before{
+              background-color: #DC4A38;
+            }
+            &.dribbble .fa{
+              color: #F26798;
+            }
+            &.dribbble:before{
+              background-color: #F26798;
+            }
+          }
+        }
+      }
+      .team_grid:nth-child(3){
+        margin-right: 0;
+      }
+    }
+  }
+}
